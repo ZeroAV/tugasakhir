@@ -10,16 +10,11 @@ legend {
     white-space: normal
 }
 
-.btn-outline-primary{
-    border-color: #2D3649;
-    background-color: #2D3649;
+.border-top{
+    color: #2D3649;
 }
 
-.btn-block{
-    border-color: #2D3649;
+.btn-primary{
     background-color: #2D3649;
-}
-
-.float-right{
-    color: white;
+    border-color: #2D3649;
 }
