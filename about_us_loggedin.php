@@ -98,7 +98,7 @@
                         <div class="team boxed-grey">
                             <div class="inner">
                                 <h5>Aditya Ramadhan</h5>
-                                <p class="subtitle">Idea Machine</p>
+                                <p class="subtitle">Design Machine</p>
                                 <div class="avatar"><img src="img/team/1.png" alt="" class="img-responsive img-circle" /></div>
                             </div>
                         </div>
