@@ -108,7 +108,7 @@
                     <div class="wow bounceInUp" data-wow-delay="0.5s">
                         <div class="team boxed-grey">
                             <div class="inner">
-                                <h5>Rizky Revaldy</h5>
+                                <h5>Rizky F. Revaldy</h5>
                                 <p class="subtitle">Coding Maestro</p>
                                 <div class="avatar"><img src="img/team/2.png" alt="" class="img-responsive img-circle" /></div>
                             </div>
@@ -120,7 +120,7 @@
                         <div class="team boxed-grey">
                             <div class="inner">
                                 <h5>Rahadian Fernandika</h5>
-                                <p class="subtitle">Super Rare Coder</p>
+                                <p class="subtitle">S-Rare Coder</p>
                                 <div class="avatar"><img src="img/team/3.png" alt="" class="img-responsive img-circle" /></div>
                             </div>
                         </div>

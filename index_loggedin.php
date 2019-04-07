@@ -39,6 +39,7 @@
                     <li class="active"><a href="#intro">Home</a></li>
                     <li><a href="#">Topics</a></li>
                     <li><a href="about_us.php">About Us</a></li>
+                    <li><a href="#">New Thread</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, User!<b class="caret"></b></a>
                         <ul class="dropdown-menu">
