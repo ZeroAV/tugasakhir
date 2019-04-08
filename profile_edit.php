@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="form-group row">
-            <label class="col-lg-3 control-label">Public Info</label> 
+            <label class="col-lg-3 control-label">Bio</label> 
             <div class="col-lg-8">
             <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
             </div>
