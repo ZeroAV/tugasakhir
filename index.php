@@ -101,14 +101,6 @@
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
                             <li>|</li>
                             <li>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </li>
-                            <li>|</li>
-                            <li>
                                 <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
                                 <span><i class="fa fa-facebook-square"></i></span>
                                 <span><i class="fa fa-twitter-square"></i></span>
@@ -133,14 +125,6 @@
                             <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
                             <li>|</li>
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </li>
                             <li>|</li>
                             <li>
                                 <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->

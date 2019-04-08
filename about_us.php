@@ -67,7 +67,6 @@
             </a>
         </div>
     </section>
-    <!-- /Section: intro -->
 
     <section id="about" class="home-section text-center">
         <div class="heading-about">
