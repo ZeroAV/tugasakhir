@@ -23,7 +23,7 @@
             <div class="card" , style="">
                 <article class="card-body">
                     <a href="signup.php" class="float-right btn btn-outline-primary">Sign up</a>
-                    <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                    <h4 class="card-title mb-4 mt-1">Login</h4>
                     <form>
                         <div class="form-group">
                             <label class="label">Username</label>

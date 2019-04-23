@@ -55,12 +55,12 @@ a:focus {
 }
 
 .btn-search {
-    background: #2D3649;
+    background: #4a6aa4;
     border-radius: 0;
     color: #fff;
     border-width: 1px;
     border-style: solid;
-    border-color: #1c1c1c;
+    border-color: #4a6aa4;
 }
 
 .btn-search:link,
