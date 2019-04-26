@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="forum.php">Forums</a></li>
+                    <li><a href="home.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="#">New Thread</a></li>
                     <li class="dropdown">

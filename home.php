@@ -38,8 +38,9 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="Index_loggedin.php">Home</a></li>
-                    <li><a href="home.php">Topics</a></li>
+                    <li><a href="home.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
+                    <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -58,8 +59,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Home</h3>
-                <a href="newthread.php" class="btn btn-primary btn-block"> Make a New Thread </a>       
+            <h3>Home</h3>   
         </div>
         <div class="container">
             <div class="well">
