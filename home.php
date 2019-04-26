@@ -36,8 +36,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="#">Topics</a></li>
+                    <li class="active"><a href="Index_loggedin.php">Home</a></li>
+                    <li><a href="home.php">Topics</a></li>
                     <li><a href="about_us.php">About Us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b class="caret"></b></a>
@@ -58,6 +58,7 @@
     <section id="latest" class="latest">
         <div class="latest-threads">
             <h3>Home</h3>
+                <a href="newthread.php" class="btn btn-primary btn-block"> Make a New Thread </a>       
         </div>
         <div class="container">
             <div class="well">
@@ -157,19 +158,9 @@
 
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="wow shake" data-wow-delay="0.4s">
-                            <div class="page-scroll marginbot-30">
-                                <a href="#intro" id="totop" class="btn btn-circle">
-                                    <i class="fa fa-angle-double-up animated"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+            
             </div>
+            
         </footer>
     </section>
 

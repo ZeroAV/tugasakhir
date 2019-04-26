@@ -72,8 +72,11 @@
         <div class="form-group row">
             <label class="col-lg-3 control-label">Bio</label> 
             <div class="col-lg-8">
+            </div>
+            <div class="col-lg-8">
             <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control"></textarea>
             </div>
+            
         </div>
         <div class="form-group">
             <label class="col-lg-3 control-label" >Upload photo</label>
