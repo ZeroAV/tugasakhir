@@ -13,6 +13,7 @@
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
 </head>
 

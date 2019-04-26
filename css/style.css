@@ -9,7 +9,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #666;
-    background-color: #fff;
+    background-color: #222222;
     align-items: 
 }
 
@@ -95,9 +95,10 @@ a:focus {
     box-shadow: none;
 }
 
-.latest {
+.latest-threads {
     text-align: center;
     padding-top: 5%;
+    color: #fff
 }
 
 .light {
