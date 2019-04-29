@@ -46,3 +46,11 @@ footer {
   background-color: #4a6aa4;
   border-color: #4a6aa4;
 }
+
+.links{
+	color: #666666;
+}
+
+.links:hover{
+	color: #7b98d6;
+}

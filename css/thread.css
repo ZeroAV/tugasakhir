@@ -1,0 +1,27 @@
+.forum-title{
+    text-transform: unset;
+}
+
+.forum-by{
+    font-size: 125%;
+    padding-bottom: 1%;  
+}
+
+.media-heading{
+    text-transform: unset;
+}
+
+.new-post{
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+.new-post-title{
+    color: white;
+}
+
+.post-button{
+    padding-top: 1%;
+}

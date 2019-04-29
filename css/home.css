@@ -1,11 +1,23 @@
-.btn-primary{
-    background-color: #4a6aa4;
+.search{
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.nav.navbar-nav {
-    background-color: #4a6aa4;
+.thread-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
-.navbar-collapse h1 {
-    color: #fff;
+.thread-link{
+    color: #666666;
+}
+
+.thread-link:hover{
+    color: #7b98d6;
+}
+
+.user-thread{
+    text-transform: unset;
 }

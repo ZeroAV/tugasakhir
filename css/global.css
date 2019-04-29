@@ -20,6 +20,17 @@ legend {
     background-color: #4a6aa4;
 }
 
+.btn-primary{
+    background-color: #4a6aa4;
+    border-radius: 5%;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+    background: #7b98d6;
+    color: #fff;
+}
+
 .float-right{
     color: white;
 }
