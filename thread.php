@@ -128,16 +128,17 @@
                     </div>
                 </div>
             </div>
+            <div class=new-post>
+                <label class="new-post-title">New Post</label>
+                <form action="#" method='post'>
+                    <textarea class="form-control" placeholder="Your post/reply..."></textarea>
+                    <div class="post-button">
+                        <button type="button" class="btn btn-primary pull-right">Post</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class=new-post>
-            <label class="new-post-title">New Post</label>
-            <form action="#" method='post'>
-                <textarea class="form-control" placeholder="Your post/reply..."></textarea>
-                <div class="post-button">
-                    <button type="button" class="btn btn-primary pull-right">Post</button>
-                </div>
-            </form>
-        </div>
+
 
         <footer>
             <div class="container">
