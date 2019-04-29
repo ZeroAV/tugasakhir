@@ -73,10 +73,13 @@
             <div class="well">
                 <div class="media">
                     <div class="media-body">
-                        <h4 class="media-heading">PHP 101</h4>
-                        <p class="text-left">By Francisco</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">PHP 101</a></h4>
+                        <h6 class="user-thread">By Adit</h6>
+                        <p class="text-justify">PHP itu apa sih?</p>
                         
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
@@ -95,10 +98,13 @@
             <div class="well">
                 <div class="media">
                     <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">Java</a></h4>
+                        <h6 class="user-thread">By Aldy</h6>
+                        <p class="text-justify">Java itu apa sih?</p>
                         
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
@@ -117,10 +123,13 @@
             <div class="well">
                 <div class="media">
                     <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">HTML</a></h4>
+                        <h6 class="user-thread">By Dika</h6>
+                        <p class="text-justify">HTML itu apa sih?</p>
                         
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
@@ -139,10 +148,13 @@
             <div class="well">
                 <div class="media">
                     <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">HTML and CSS</a></h4>
+                        <h6 class="user-thread">By Adit</h6>
+                        <p class="text-justify">Lorem ipsum dolor sit amet</p>
                         
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>

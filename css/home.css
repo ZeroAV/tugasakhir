@@ -9,3 +9,15 @@
     padding-right: 10%;
     padding-bottom: 5%;
 }
+
+.thread-link{
+    color: #666666;
+}
+
+.thread-link:hover{
+    color: #7b98d6;
+}
+
+.user-thread{
+    text-transform: unset;
+}
