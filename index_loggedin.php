@@ -87,20 +87,19 @@
         <div class="thread-container">
             <div class="well">
                 <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placekitten.com/150/150">
-                    </a>
                     <div class="media-body">
-                        <h4 class="media-heading">Thread 1</h4>
-                        <p class="text-left">By Francisco</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                            Aliquam in felis sit amet augue.</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">PHP 101</a></h4>
+                        <h6 class="user-thread">By Adit</h6>
+                        <p class="text-justify">PHP itu apa sih?</p>
+
                         <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
                             <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <span><i class="glyphicon glyphicon-comment"></i> 3 replies</span>
                             <li>|</li>
                             <li>
                                 <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
@@ -113,18 +112,17 @@
             </div>
             <div class="well">
                 <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placekitten.com/150/150">
-                    </a>
                     <div class="media-body">
-                        <h4 class="media-heading">Thread 2</h4>
-                        <p class="text-left">By Anailuj</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                            Aliquam in felis sit amet augue.</p>
+                        <h4 class="media-heading"><a class="links" href="thread.php">Java</a></h4>
+                        <h6 class="user-thread">By Aldy</h6>
+                        <p class="text-justify">Java itu apa sih?</p>
+
                         <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
                             <li>|</li>
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
                             <li>|</li>
