@@ -40,7 +40,8 @@
                     <li><a href="home.php">Forums</a></li>
                     <li class="active"><a href="#about">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
+                                class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="login.php">Login</a></li>
                             <li><a href="signup.php">Sign Up</a></li>
@@ -98,7 +99,8 @@
                             <div class="inner">
                                 <h5>Aditya Ramadhan</h5>
                                 <p class="subtitle">Design Machine</p>
-                                <div class="avatar"><img src="img/team/1.png" alt="" class="img-responsive img-circle" /></div>
+                                <div class="avatar"><img src="img/team/1.png" alt=""
+                                        class="img-responsive img-circle" /></div>
                             </div>
                         </div>
                     </div>
@@ -109,7 +111,8 @@
                             <div class="inner">
                                 <h5>Rizky F. Revaldy</h5>
                                 <p class="subtitle">Coding Maestro</p>
-                                <div class="avatar"><img src="img/team/2.png" alt="" class="img-responsive img-circle" /></div>
+                                <div class="avatar"><img src="img/team/2.png" alt=""
+                                        class="img-responsive img-circle" /></div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +123,8 @@
                             <div class="inner">
                                 <h5>Rahadian Fernandika</h5>
                                 <p class="subtitle">S-Rare Coder</p>
-                                <div class="avatar"><img src="img/team/3.png" alt="" class="img-responsive img-circle" /></div>
+                                <div class="avatar"><img src="img/team/3.png" alt=""
+                                        class="img-responsive img-circle" /></div>
                             </div>
                         </div>
                     </div>
@@ -129,24 +133,24 @@
         </div>
     </section>
     <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="wow shake" data-wow-delay="0.4s">
-                            <div class="page-scroll marginbot-30">
-                                <a href="#intro" id="totop" class="btn btn-circle">
-                                    <i class="fa fa-angle-double-up animated"></i>
-                                </a>
-                            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="#intro" id="totop" class="btn btn-circle">
+                                <i class="fa fa-angle-double-up animated"></i>
+                            </a>
                         </div>
-                        <div class="credits">
-                            <p><span class="glyphicon glyphicon-copyright-mark"></span>kuliahGan Team</p>
-                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
+                    </div>
+                    <div class="credits">
+                        <p><span class="glyphicon glyphicon-copyright-mark"></span>kuliahGan Team</p>
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>

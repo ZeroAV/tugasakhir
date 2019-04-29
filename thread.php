@@ -43,7 +43,8 @@
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
+                                class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="login.php">Login</a></li>
                             <li><a href="signup.php">Sign Up</a></li>
@@ -60,9 +61,9 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3 class="forum-title">PHP</h3> 
+            <h3 class="forum-title">PHP</h3>
             <p class="forum-by">By Adit</p>
-            </div>
+        </div>
         </div>
         <div class="container">
             <div class="well">
@@ -88,7 +89,9 @@
                 <div class="media">
                     <div class="media-body">
                         <h4 class="media-heading">Aldy</h4>
-                        <p class="text-justify">PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.</p>
+                        <p class="text-justify">PHP: Hypertext Preprocessor is a general-purpose programming language
+                            originally designed for web development. It was originally created by Rasmus Lerdorf in
+                            1994; the PHP reference implementation is now produced by The PHP Group.</p>
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
                             <li>|</li>
@@ -107,8 +110,10 @@
                 <div class="media">
                     <div class="media-body">
                         <h4 class="media-heading">Dika</h4>
-                        <p class="text-justify">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.
-</p>
+                        <p class="text-justify">PHP is a server scripting language, and a powerful tool for making
+                            dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to
+                            competitors such as Microsoft's ASP.
+                        </p>
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
                             <li>|</li>
@@ -125,7 +130,7 @@
             </div>
         </div>
         <div class=new-post>
-            <h4 class="new-post-title">New Post</h4>
+            <label class="new-post-title">New Post</label>
             <form action="#" method='post'>
                 <textarea class="form-control" placeholder="Your post/reply..."></textarea>
                 <div class="post-button">

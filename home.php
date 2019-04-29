@@ -43,7 +43,8 @@
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
+                                class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="login.php">Login</a></li>
                             <li><a href="signup.php">Sign Up</a></li>
@@ -60,7 +61,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Forums Home</h3>   
+            <h3>Forums Home</h3>
             <div class="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search topics or keyword...">
@@ -77,7 +78,7 @@
                         <h4 class="media-heading"><a class="links" href="thread.php">PHP 101</a></h4>
                         <h6 class="user-thread">By Adit</h6>
                         <p class="text-justify">PHP itu apa sih?</p>
-                        
+
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
                             <li>|</li>
@@ -102,7 +103,7 @@
                         <h4 class="media-heading"><a class="links" href="thread.php">Java</a></h4>
                         <h6 class="user-thread">By Aldy</h6>
                         <p class="text-justify">Java itu apa sih?</p>
-                        
+
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
                             <li>|</li>
@@ -127,7 +128,7 @@
                         <h4 class="media-heading"><a class="links" href="thread.php">HTML</a></h4>
                         <h6 class="user-thread">By Dika</h6>
                         <p class="text-justify">HTML itu apa sih?</p>
-                        
+
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
                             <li>|</li>
@@ -152,7 +153,7 @@
                         <h4 class="media-heading"><a class="links" href="thread.php">HTML and CSS</a></h4>
                         <h6 class="user-thread">By Adit</h6>
                         <p class="text-justify">Lorem ipsum dolor sit amet</p>
-                        
+
                         <ul class="list-inline list-unstyled">
                             <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
                             <li>|</li>

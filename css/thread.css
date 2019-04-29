@@ -1,3 +1,15 @@
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal
+}
+
 .forum-title{
     text-transform: unset;
 }
@@ -20,8 +32,21 @@
 
 .new-post-title{
     color: white;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 145%;
 }
 
 .post-button{
     padding-top: 1%;
+}
+
+.page-title{
+    padding-bottom: 2%;
+}
+
+.content{
+    padding-top: 2%;
 }
