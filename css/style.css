@@ -87,6 +87,7 @@ a:focus {
     border-radius: 100px;
 }
 
+
 .form-control-borderless:hover,
 .form-control-borderless:active,
 .form-control-borderless:focus {
@@ -178,7 +179,7 @@ a:focus {
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-    color: #666;
+    color: #fff;
 }
 
 .navbar-custom .nav li a {

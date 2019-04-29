@@ -34,3 +34,9 @@ legend {
 .float-right{
     color: white;
 }
+
+.thread-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}

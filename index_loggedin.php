@@ -10,7 +10,8 @@
     <title>kuliahGan</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
 
@@ -83,7 +84,7 @@
         <div class="latest-threads">
             <h3>Latest Threads</h3>
         </div>
-        <div class="container">
+        <div class="thread-container">
             <div class="well">
                 <div class="media">
                     <a class="pull-left" href="#">

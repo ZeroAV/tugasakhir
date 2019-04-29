@@ -29,12 +29,8 @@
                     <form>
                         <div class="form-row">
                             <div class="col form-group">
-                                <label>First name </label>
+                                <label>Name </label>
                                 <input type="text" class="form-control" placeholder="">
-                            </div> <!-- form-group end.// -->
-                            <div class="col form-group">
-                                <label>Last name</label>
-                                <input type="text" class="form-control" placeholder=" ">
                             </div> <!-- form-group end.// -->
                         </div> <!-- form-row end.// -->
 
@@ -62,7 +58,7 @@
                         <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
                     </form>
                 </article> <!-- card-body end .// -->
-                <div class="border-top card-body text-center">Have an account? <a href="login.php" class="login-link" style="color: #576075">Log In</a></div>
+                <div class="border-top card-body text-center">Have an account? <a href="login.php" class="login-link">Log In</a></div>
             </div> <!-- card.// -->
         </div> <!-- col.//-->
 

@@ -10,8 +10,9 @@
     <title>kuliahGan</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
 
