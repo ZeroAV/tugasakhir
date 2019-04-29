@@ -1,11 +1,11 @@
-.btn-primary{
-    background-color: #4a6aa4;
+.search{
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.nav.navbar-nav {
-    background-color: #4a6aa4;
-}
-
-.navbar-collapse h1 {
-    color: #fff;
+.thread-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }

@@ -53,7 +53,6 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Section: intro -->
     <section id="intro" class="intro">
 
         <div class="slogan">
@@ -76,7 +75,6 @@
             </a>
         </div>
     </section>
-    <!-- /Section: intro -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
@@ -90,7 +88,7 @@
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">Thread 1</h4>
-                        <p class="text-right">By Francisco</p>
+                        <p class="text-left">By Francisco</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
                             Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
                             dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
@@ -116,7 +114,7 @@
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">Thread 2</h4>
-                        <p class="text-right">By Anailuj</p>
+                        <p class="text-left">By Anailuj</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
                             Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
                             dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.

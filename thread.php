@@ -10,9 +10,10 @@
     <title>kuliahGan</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/thread.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
 
 </head>
@@ -38,7 +39,7 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="Index_loggedin.php">Home</a></li>
-                    <li class="active"><a href="home.php">Forums</a></li>
+                    <li><a href="home.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
@@ -59,97 +60,72 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Forums Home</h3>   
-            <div class="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search topics or keyword...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
-                    </span>
+            <h3 class="forum-title">PHP</h3> 
+            <p class="forum-by">By Adit</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="well">
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Adit</h4>
+                        <p class="post-content">PHP itu apa sih?</p>
+                        <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Aldy</h4>
+                        <p>PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.</p>
+                        <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">Dika</h4>
+                        <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.
+</p>
+                        <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="thread-container">
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">PHP 101</h4>
-                        <p class="text-left">By Francisco</p>
-                        
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
+        <div class=new-post>
+            <h4 class="new-post-title">New Post</h4>
+            <form action="#" method='post'>
+                <textarea class="form-control" placeholder="Your post/reply..."></textarea>
+                <div class="post-button">
+                    <button type="button" class="btn btn-primary pull-right">Post</button>
                 </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
-                        
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
-                        
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
-                        
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
 
         <footer>
