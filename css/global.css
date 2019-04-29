@@ -40,3 +40,7 @@ legend {
     padding-right: 10%;
     padding-bottom: 5%;
 }
+
+textarea{
+    resize: vertical;
+}
