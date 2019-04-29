@@ -71,6 +71,8 @@
                         <h4 class="media-heading">Adit</h4>
                         <p class="post-content">PHP itu apa sih?</p>
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li>
@@ -88,6 +90,8 @@
                         <h4 class="media-heading">Aldy</h4>
                         <p>PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.</p>
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li>
@@ -106,6 +110,8 @@
                         <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.
 </p>
                         <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
+                            <li>|</li>
                             <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
                             <li>|</li>
                             <li>
