@@ -77,7 +77,31 @@
                         <p class="text-left">By Francisco</p>
                         
                         <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <span><i class="glyphicon glyphicon-comment"></i> 3 replies</span>
+                            <li>|</li>
+                            <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading">HTML and CSS</h4>
+                        <p class="text-left">By Anailuj</p>
+                        
+                        <ul class="list-inline list-unstyled">
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
                             <li>|</li>
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
                             <li>|</li>
@@ -97,7 +121,9 @@
                         <p class="text-left">By Anailuj</p>
                         
                         <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
+                            <li>|</li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
                             <li>|</li>
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
                             <li>|</li>
@@ -117,27 +143,9 @@
                         <p class="text-left">By Anailuj</p>
                         
                         <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
                             <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">HTML and CSS</h4>
-                        <p class="text-left">By Anailuj</p>
-                        
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
+                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
                             <li>|</li>
                             <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
                             <li>|</li>
