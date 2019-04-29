@@ -23,15 +23,9 @@
             <h3>Personal info</h3>
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label class="col-lg-3 control-label">First name:</label>
+                    <label class="col-lg-3 control-label">Name:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" placeholder="First name" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Last name:</label>
-                    <div class="col-lg-8">
-                        <input class="form-control" placeholder="Last name" type="text">
+                        <input class="form-control" placeholder="Name" type="text">
                     </div>
                 </div>
                 <div class="form-group">
