@@ -15,7 +15,6 @@
     <link href="css/global.css" rel="stylesheet">
     <link href="css/thread.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
