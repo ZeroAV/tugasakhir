@@ -21,10 +21,7 @@ if(isset($_SESSION['username'])){
 </head>
 
 <body>
-<?php
-$sql="SELECT * FROM user ";
-$result=$mysqli->query($sql);
-echo $sql;
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 
