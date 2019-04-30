@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.5-10.1.37-MariaDB)
 # Database: finalproject
-# Generation Time: 2019-04-30 1:02:10 AM +0000
+# Generation Time: 2019-04-30 1:45:09 AM +0000
 # ************************************************************
 
 
@@ -81,10 +81,10 @@ LOCK TABLES `user` WRITE;
 
 INSERT INTO `user` (`username`, `nama`, `password`, `gender`, `bio`)
 VALUES
-	('adit','Adit','123','L','Ini profile adit'),
-	('admin','admin','123','L','Ini punya admin'),
-	('aldy','Aldy','123','L','Ini profile aldy'),
-	('dika','Dika','123','L','Ini profile dika');
+	('adit','Adit','123','m','Ini profile adit'),
+	('admin','admin','123','m','Ini punya admin'),
+	('aldy','Aldy','123','m','Ini profile aldy'),
+	('dika','Dika','123','m','Ini profile dika');
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
