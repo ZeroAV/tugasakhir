@@ -131,7 +131,7 @@
             <div class=new-post>
                 <label class="new-post-title">New Post</label>
                 <form action="newpost.php" method='post'>
-                    <textarea class="form-control" placeholder="Your post/reply..."></textarea>
+                    <textarea id="post" class="form-control" placeholder="Your post/reply..."></textarea>
                     <div class="post-button">
                         <button type="button" class="btn btn-primary pull-right">Post</button>
                     </div>

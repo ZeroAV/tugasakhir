@@ -41,7 +41,7 @@
                     <li><a href="Index_loggedin.php">Home</a></li>
                     <li><a href="home.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
-                    <li><a href="newthread.php">New Thread</a></li>
+                    <li class="active"><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
                                 class="caret"></b></a>
@@ -56,18 +56,26 @@
         </div>
         <!-- /.container -->
     </nav>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3 class="forum-title">New Thread</h3>
+            <h3 class="title">New Thread</h3>
         </div>
         </div>
         <div class="container">
-            <div class="well">
-               
-                </div>
+            <div class=new-post>
+                <form action="newpost.php" method='post'>
+                    <label class="new-post-title">Thread Title</label>
+                    <textarea id="title" class="form-control" placeholder="Your post/reply..."></textarea>
+                    <label class="new-post-title">First Post</label>
+                    <textarea id="post" class="form-control" placeholder="Your post/reply..."></textarea>
+                    <div class="post-button">
+                        <button type="button" class="btn btn-primary pull-right">Post</button>
+                    </div>
+                </form>
             </div>
-            
+        </div>
+
 
 
         <footer>
