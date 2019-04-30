@@ -30,27 +30,27 @@
                         <div class="form-row">
                             <div class="col form-group">
                                 <label>Name </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="" id="nama">
                             </div> <!-- form-group end.// -->
                         </div> <!-- form-row end.// -->
 
                         <div class="form-group">
                             <label class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" value="option1">
+                                <input class="form-check-input" type="radio" name="gender" value="m">
                                 <span class="form-check-label"> Male </span>
                             </label>
                             <label class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" value="option2">
+                                <input class="form-check-input" type="radio" name="gender" value="f">
                                 <span class="form-check-label"> Female</span>
                             </label>
                         </div> <!-- form-group end.// -->
                         <div class="form-group">
                             <label>Create username</label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" id="username">
                         </div> <!-- form-group end.// -->
                         <div class="form-group">
                             <label>Create password</label>
-                            <input class="form-control" type="password">
+                            <input class="form-control" type="password" id="password">
                         </div> <!-- form-group end.// -->
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block"> Register </button>

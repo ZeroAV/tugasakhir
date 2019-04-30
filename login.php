@@ -27,12 +27,12 @@
                     <form>
                         <div class="form-group">
                             <label class="label">Username</label>
-                            <input name="" class="form-control" placeholder="Username" type="email">
+                            <input name="" class="form-control" placeholder="Username" type="text" id="username">
                         </div> <!-- form-group// -->
                         <div class="form-group">
                             <a class="float-right" href="#">Forgot?</a>
                             <label class="label">Password</label>
-                            <input class="form-control" placeholder="******" type="password">
+                            <input class="form-control" placeholder="******" type="password" id="password">
                         </div> <!-- form-group// -->
                         <div class="form-group">
                             <div class="checkbox">
