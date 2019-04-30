@@ -2,7 +2,9 @@
 <?php
 session_start();
 include_once('connect.php');
-
+if(isset($_SESSION['username'])){
+    header('Location: index_loggedin.php');
+}
 ?>
 <html lang="en">
 
@@ -20,11 +22,9 @@ include_once('connect.php');
 
 <body>
 <?php
-include('connect.php');
 $sql="SELECT * FROM user ";
 $result=$mysqli->query($sql);
 echo $sql;
-?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 

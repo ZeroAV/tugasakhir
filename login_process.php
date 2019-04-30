@@ -15,7 +15,7 @@ if($result->num_rows>0){
     foreach($row as $key=>$value){
         $_SESSION["$key"]=$value;
     }
-    header('Location:index.php');
+    header('Location:index_loggedin.php');
     }
     else{
         header('Location:login.php?wpassword=1');
