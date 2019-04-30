@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+session_start();
+include_once('connect.php');
+if(isset($_SESSION['username'])){
+    header('Location: index_loggedin.php');
+}
+?>
 <html lang="en">
 
 <head>
@@ -14,6 +21,7 @@
 </head>
 
 <body>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 
@@ -24,15 +32,21 @@
                 <article class="card-body">
                     <a href="signup.php" class="float-right btn btn-outline-primary">Sign up</a>
                     <h4 class="card-title mb-4 mt-1">Login</h4>
-                    <form>
+                    <form class="form-container" action="login_process.php" method="post">
                         <div class="form-group">
                             <label class="label">Username</label>
-                            <input name="" class="form-control" placeholder="Username" type="email">
+                            <input name="username" class="form-control" placeholder="Username" type="text" id="username">
+                            <?php if(isset($_GET['wusername'])) :?>
+                    <p class="text-danger">username tidak terdaftar</p>
+                    <?php endif;?>
                         </div> <!-- form-group// -->
                         <div class="form-group">
                             <a class="float-right" href="#">Forgot?</a>
                             <label class="label">Password</label>
-                            <input class="form-control" placeholder="******" type="password">
+                            <input name= "password" class="form-control" placeholder="******" type="password" id="password">
+                            <?php if(isset($_GET['wpassword'])) :?>
+                    <p class="text-danger">Password salah</p>
+                    <?php endif;?>
                         </div> <!-- form-group// -->
                         <div class="form-group">
                             <div class="checkbox">
