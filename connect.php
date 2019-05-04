@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $username ="root";
 $password ="";
-$database = "tugasakhir";
+$database = "finalproject";
 
 $mysqli=new mysqli($hostname,$username,$password,$database);
 if($mysqli->connect_error){

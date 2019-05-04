@@ -1,3 +1,8 @@
+<?php include "connect.php";
+$q=mysqli_query($mysqli,"SELECT * FROM thread");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,108 +77,27 @@
             </div>
         </div>
         <div class="thread-container">
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">PHP 101</a></h4>
-                        <h6 class="user-thread">By Adit</h6>
-                        <p class="text-justify">PHP itu apa sih?</p>
+            <?php 
+            while($hasil=mysqli_fetch_assoc($q)){
+            $q2=mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$hasil[thread_id] LIMIT 1");
+            $post=mysqli_fetch_assoc($q2);
+            $get=$hasil['thread_id'];
+            echo "<div class='well'>
+                    <div class='media'>
+                        <div class='media-body'>
+                            <h4 class='media-heading'><a class='links' id='get' href='thread.php?thread=$get'>$hasil[title]</a></h4>
+                            <h6 class='user-thread'>By $hasil[username]</h6>
+                            <p class='text-justify'>$post[content]</p>
 
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 3 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
+                            <ul class='list-inline list-unstyled'>
+                                <li><span><i class='glyphicon glyphicon-time'></i> Created $hasil[date_created]</span></li>
+                                <li>|</li>
+                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">Java</a></h4>
-                        <h6 class="user-thread">By Aldy</h6>
-                        <p class="text-justify">Java itu apa sih?</p>
-
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">HTML</a></h4>
-                        <h6 class="user-thread">By Dika</h6>
-                        <p class="text-justify">HTML itu apa sih?</p>
-
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">HTML and CSS</a></h4>
-                        <h6 class="user-thread">By Adit</h6>
-                        <p class="text-justify">Lorem ipsum dolor sit amet</p>
-
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </div>";}?>
         </div>
-
         <footer>
             <div class="container">
                 <div class="row">

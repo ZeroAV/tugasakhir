@@ -9,7 +9,7 @@ $errors = array();
 
 
 
-$db = mysqli_connect('localhost', 'root', 'fachrizzar', 'finalproject');
+$db = mysqli_connect('localhost', 'root', '', 'finalproject');
 
 
 if (isset($_POST['reg_user'])) {

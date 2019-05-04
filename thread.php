@@ -1,3 +1,8 @@
+<?php include "connect.php";
+$q=mysqli_query($mysqli,"SELECT * FROM thread WHERE thread_id=$_GET[thread] LIMIT 1");
+$thread=mysqli_fetch_assoc($q);
+$query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]");?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,73 +65,25 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3 class="forum-title">PHP</h3>
-            <p class="forum-by">By Adit</p>
+            <?php echo "<h3 class='forum-title'>$thread[title]</h3
+            <p class='forum-by'>By $thread[username]</p>";?>
         </div>
         </div>
-        <div class="container">
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">Adit</h4>
-                        <p class="text-justify">PHP itu apa sih?</p>
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
+        <div class='container'>
+        <?php while($hasil=mysqli_fetch_assoc($query)){
+        echo "<div class='well'>
+                <div class='media'>
+                    <div class='media-body'>
+                        <h4 class='media-heading'>$hasil[username]</h4>
+                        <p class='text-justify'>$hasil[content]</p>
+                        <ul class='list-inline list-unstyled'>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Posted $hasil[date_created] </span></li>
                             <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_edited] </span></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">Aldy</h4>
-                        <p class="text-justify">PHP: Hypertext Preprocessor is a general-purpose programming language
-                            originally designed for web development. It was originally created by Rasmus Lerdorf in
-                            1994; the PHP reference implementation is now produced by The PHP Group.</p>
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">Dika</h4>
-                        <p class="text-justify">PHP is a server scripting language, and a powerful tool for making
-                            dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to
-                            competitors such as Microsoft's ASP.
-                        </p>
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @dika </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </div>";}?>
             <div class=new-post>
                 <label class="new-post-title">New Post</label>
                 <form action="newpost.php" method='post'>
