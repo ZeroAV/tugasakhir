@@ -6,6 +6,7 @@ if(!isset($_POST['username'])){
     die();
 }
 extract($_POST);
+$username=$_POST['username'];
 $sql="SELECT * FROM user WHERE username='$username'";
 $result=$mysqli->query($sql);
 if($result->num_rows>0){

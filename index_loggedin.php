@@ -1,3 +1,8 @@
+<?php include "connect.php";
+session_start();
+$q=mysqli_query($mysqli,"SELECT * FROM thread LIMIT 2");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,14 +43,14 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="home.php">Forums</a></li>
+                    <li><a href="home_loggedin.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="#">New Thread</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, User!<b class="caret"></b></a>
+                        <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
                             <li><a href="profile_page.php">Profile</a></li>
-                            <li><a href="logout.php">Logout</a></li>
+                            <li><a href="logout_process.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -82,59 +87,29 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Latest Threads</h3>
+            <h3>Threads</h3>
         </div>
         <div class="thread-container">
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">PHP 101</a></h4>
-                        <h6 class="user-thread">By Adit</h6>
-                        <p class="text-justify">PHP itu apa sih?</p>
+            <?php 
+            while($hasil=mysqli_fetch_assoc($q)){
+            $q2=mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$hasil[thread_id] LIMIT 1");
+            $post=mysqli_fetch_assoc($q2);
+            $get=$hasil['thread_id'];
+            echo "<div class='well'>
+                    <div class='media'>
+                        <div class='media-body'>
+                            <h4 class='media-heading'><a class='links' id='get' href='thread.php?thread=$get'>$hasil[title]</a></h4>
+                            <h6 class='user-thread'>By $hasil[username]</h6>
+                            <p class='text-justify'>$post[content]</p>
 
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @adit </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 3 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
+                            <ul class='list-inline list-unstyled'>
+                                <li><span><i class='glyphicon glyphicon-time'></i> Created $hasil[date_created]</span></li>
+                                <li>|</li>
+                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="well">
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading"><a class="links" href="thread.php">Java</a></h4>
-                        <h6 class="user-thread">By Aldy</h6>
-                        <p class="text-justify">Java itu apa sih?</p>
-
-                        <ul class="list-inline list-unstyled">
-                            <li><span><i class="glyphicon glyphicon-user"></i> @aldy </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Created 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <li><span><i class="glyphicon glyphicon-time"></i> Last edited 2 days, 8 hours </span></li>
-                            <li>|</li>
-                            <span><i class="glyphicon glyphicon-comment"></i> 2 replies</span>
-                            <li>|</li>
-                            <li>
-                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                <span><i class="fa fa-facebook-square"></i></span>
-                                <span><i class="fa fa-twitter-square"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </div>";}?>
         </div>
         <!-- /Section: contact -->
 
