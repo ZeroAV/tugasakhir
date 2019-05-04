@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +44,7 @@
                 <li><a href="index_loggedin.php">Home</a></li>
                     <li><a href="home_loggedin.php">Forums</a></li>
                     <li><a href="about_us_loggedin.php">About Us</a></li>
-                    <li><a href="newthread.php">New Thread</a></li>
+                    <li classs="active"><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
@@ -63,13 +66,13 @@
         </div>
         <div class="container">
             <div class=new-post>
-                <form action="newpost.php" method='post'>
+                <form action="newthread_process.php" method='post'>
                     <label class="new-post-title">Thread Title</label>
-                    <textarea id="title" class="form-control" placeholder="Your post/reply..."></textarea>
+                    <textarea id="title" name="title" class="form-control" placeholder="Thread title..."></textarea>
                     <label class="new-post-title">First Post</label>
-                    <textarea id="post" class="form-control" placeholder="Your post/reply..."></textarea>
-                    <div class="post-button">
-                        <tr><td><input type='submit' name='Post' value='Post'></td></tr>
+                    <textarea id="content" name="content" class="form-control" placeholder="First post..."></textarea>
+                    <div class='post-button'>
+                        <button type='submit' class='btn btn-primary pull-right' id='submit'>Post</button>
                     </div>
                 </form>
             </div>

@@ -1,5 +1,6 @@
 <?php include "connect.php";
 session_start();
+extract($_POST);
 $content=htmlspecialchars($_POST['content']);
 $username=$_SESSION['username'];
 $date=mktime();
