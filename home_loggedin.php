@@ -44,10 +44,10 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="home_loggedin.php">Forums</a></li>
-                    <li><a href="about_us.php">About Us</a></li>
-                    <li><a href="#">New Thread</a></li>
+                <li><a href="index_loggedin.php">Home</a></li>
+                    <li  class="active"><a href="home_loggedin.php">Forums</a></li>
+                    <li><a href="about_us_loggedin.php">About Us</a></li>
+                    <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
@@ -85,7 +85,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
             echo "<div class='well'>
                     <div class='media'>
                         <div class='media-body'>
-                            <h4 class='media-heading'><a class='links' id='get' href='thread.php?thread=$get'>$hasil[title]</a></h4>
+                            <h4 class='media-heading'><a class='links' id='get' href='thread_loggedin.php?thread=$get'>$hasil[title]</a></h4>
                             <h6 class='user-thread'>By $hasil[username]</h6>
                             <p class='text-justify'>$post[content]</p>
 

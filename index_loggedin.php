@@ -98,7 +98,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread LIMIT 2");
             echo "<div class='well'>
                     <div class='media'>
                         <div class='media-body'>
-                            <h4 class='media-heading'><a class='links' id='get' href='thread.php?thread=$get'>$hasil[title]</a></h4>
+                            <h4 class='media-heading'><a class='links' id='get' href='thread_loggedin.php?thread=$get'>$hasil[title]</a></h4>
                             <h6 class='user-thread'>By $hasil[username]</h6>
                             <p class='text-justify'>$post[content]</p>
 
