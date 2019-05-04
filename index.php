@@ -1,5 +1,5 @@
 <?php include "connect.php";
-$q=mysqli_query($mysqli,"SELECT * FROM thread LIMIT 2");
+$q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_created DESC LIMIT 2");
 
 ?>
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread LIMIT 2");
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Threads</h3>
+            <h3>Latest Threads</h3>
         </div>
         <div class="thread-container">
             <?php 
