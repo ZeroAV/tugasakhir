@@ -70,7 +70,7 @@
                     <label class="new-post-title">First Post</label>
                     <textarea id="post" class="form-control" placeholder="Your post/reply..."></textarea>
                     <div class="post-button">
-                        <button type="button" class="btn btn-primary pull-right">Post</button>
+                        <tr><td><input type='submit' name='Post' value='Post'></td></tr>
                     </div>
                 </form>
             </div>

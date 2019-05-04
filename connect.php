@@ -1,8 +1,8 @@
 <?php
 $hostname = "localhost";
 $username ="root";
-$password ="fachrizzar";
-$database = "finalproject";
+$password ="";
+$database = "tugasakhir";
 
 $mysqli=new mysqli($hostname,$username,$password,$database);
 if($mysqli->connect_error){
