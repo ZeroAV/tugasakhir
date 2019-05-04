@@ -37,17 +37,16 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Index_loggedin.php">Home</a></li>
-                    <li><a href="home.php">Forums</a></li>
-                    <li><a href="about_us.php">About Us</a></li>
-                    <li class="active"><a href="newthread.php">New Thread</a></li>
+            <ul class="nav navbar-nav">
+                <li><a href="index_loggedin.php">Home</a></li>
+                    <li><a href="home_loggedin.php">Forums</a></li>
+                    <li><a href="about_us_loggedin.php">About Us</a></li>
+                    <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
-                                class="caret"></b></a>
+                        <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="signup.php">Sign Up</a></li>
+                            <li><a href="profile_page.php">Profile</a></li>
+                            <li><a href="logout_process.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
