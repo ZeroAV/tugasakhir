@@ -1,7 +1,8 @@
 <?php include "connect.php";
-$q=mysqli_query($mysqli,"SELECT * FROM thread");
-
-?>
+session_start();
+$q=mysqli_query($mysqli,"SELECT * FROM thread WHERE thread_id=$_GET[thread] LIMIT 1");
+$thread=mysqli_fetch_assoc($q);
+$query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +19,8 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/thread.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -42,17 +42,16 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Index_loggedin.php">Home</a></li>
-                    <li class="active"><a href="home.php">Forums</a></li>
-                    <li><a href="about_us.php">About Us</a></li>
-                    <li><a href="login.php">New Thread</a></li>
+            <ul class="nav navbar-nav">
+                <li><a href="index_loggedin.php">Home</a></li>
+                    <li><a href="home_loggedin.php">Forums</a></li>
+                    <li><a href="about_us_loggedin.php">About Us</a></li>
+                    <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login/Sign Up <b
-                                class="caret"></b></a>
+                        <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="signup.php">Sign Up</a></li>
+                            <li><a href="profile_page.php">Profile</a></li>
+                            <li><a href="logout_process.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -66,38 +65,38 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <h3>Forums Home</h3>
-            <div class="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search topics or keyword...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
-                    </span>
-                </div>
-            </div>
+            <?php echo "<h3 class='forum-title'>$thread[title]</h3
+            <p class='forum-by'>By $thread[username]</p>";?>
         </div>
-        <div class="thread-container">
-            <?php 
-            while($hasil=mysqli_fetch_assoc($q)){
-            $q2=mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$hasil[thread_id] LIMIT 1");
-            $post=mysqli_fetch_assoc($q2);
-            $get=$hasil['thread_id'];
-            echo "<div class='well'>
-                    <div class='media'>
-                        <div class='media-body'>
-                            <h4 class='media-heading'><a class='links' id='get' href='thread.php?thread=$get'>$hasil[title]</a></h4>
-                            <h6 class='user-thread'>By $hasil[username]</h6>
-                            <p class='text-justify'>$post[content]</p>
-
-                            <ul class='list-inline list-unstyled'>
-                                <li><span><i class='glyphicon glyphicon-time'></i> Created $hasil[date_created]</span></li>
-                                <li>|</li>
-                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>
-                            </ul>
-                        </div>
+        </div>
+        <div class='container'>
+        <?php while($hasil=mysqli_fetch_assoc($query)){
+        echo "<div class='well'>
+                <div class='media'>
+                    <div class='media-body'>
+                        <h4 class='media-heading'>$hasil[username]</h4>
+                        <p class='text-justify'>$hasil[content]</p>
+                        <ul class='list-inline list-unstyled'>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Posted $hasil[date_created] </span></li>
+                            <li>|</li>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_edited] </span></li>
+                        </ul>
                     </div>
-                </div>";}?>
+                </div>
+            </div>";}?>
+            <?php echo"
+            <div class=new-post>
+                <label class='new-post-title'>New Post</label>
+                <form action='newpost.php?thread=$hasil[thread_id]' method='post'>
+                    <textarea id='content' class='form-control' placeholder='Your post/reply...'></textarea>
+                    <div class='post-button'>
+                        <button type='submit' class='btn btn-primary pull-right'>Post</button>
+                    </div>
+                </form>
+            </div>";?>
         </div>
+
+
         <footer>
             <div class="container">
                 <div class="row">
