@@ -44,7 +44,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_created DESC LIMIT 2
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#intro">Home</a></li>
                     <li><a href="home_loggedin.php">Forums</a></li>
-                    <li><a href="about_us.php">About Us</a></li>
+                    <li><a href="about_us_loggedin.php">About Us</a></li>
                     <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
