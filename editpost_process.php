@@ -2,6 +2,7 @@
 $id=$_GET['thread'];
 $pid=$_GET['post'];
 $content=$_POST['content'];
+date_default_timezone_set('Asia/Jakarta');
 $date=date("Y-m-d H:i:s");
 $query=mysqli_query($mysqli, "UPDATE post SET content='$content', date_edited='$date' WHERE id='$pid'");
 if($query){

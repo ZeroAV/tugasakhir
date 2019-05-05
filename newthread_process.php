@@ -5,6 +5,7 @@ extract($_POST);
 $username=$_SESSION['username'];
 $title=$_POST['title'];
 $content=$_POST['content'];
+date_default_timezone_set('Asia/Jakarta');
 $date=date("Y-m-d H:i:s");
 $query= mysqli_query($mysqli,"INSERT INTO thread (thread_id, username, title, date_created, date_last_edited)
 VALUES ('0', '$username', '$title', '$date', '$date')");

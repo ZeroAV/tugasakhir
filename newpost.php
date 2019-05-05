@@ -3,6 +3,7 @@ session_start();
 extract($_POST);
 $username=$_SESSION['username'];
 $content=$_POST['content'];
+date_default_timezone_set('Asia/Jakarta');
 $date=date("Y-m-d H:i:s");
 $tid=$_GET['thread'];
 $query=mysqli_query($mysqli,"INSERT INTO post (id, username, thread_id, content, date_created, date_edited)

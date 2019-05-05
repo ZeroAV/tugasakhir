@@ -5,6 +5,7 @@ $pid=mysqli_query($mysqli,"SELECT id FROM post WHERE thread_id=$id ORDER BY id A
 $pidg=mysqli_fetch_assoc($pid);
 $title=$_POST['title'];
 $content=$_POST['content'];
+date_default_timezone_set('Asia/Jakarta');
 $date=date("Y-m-d H:i:s");
 $query=mysqli_query($mysqli, "UPDATE thread SET title='$title', date_last_edited='$date' WHERE thread_id='$id'");
 if($query){
