@@ -94,7 +94,10 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
                                 <li>|</li>
                                 <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>";
                                 if($_SESSION['username']=="admin"){
-                                echo "<li>|</li>
+                                echo "
+                                <li>|</li>
+                                <li><span><a href='editthread.php?thread=$get'>Edit Thread</a></span></li>
+                                <li>|</li>
                                 <li><span><a href='deletethread.php?thread=$get'>Delete Thread</a></span></li>
                                 </ul>
                         </div>
@@ -103,8 +106,9 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
                                 }else if(isset($_SESSION['username'])){
                                         if($_SESSION['username']==$hasil['username']){
                                         echo "<li>|</li>
+                                        <li><span><a href='editthread.php?thread=$get'>Edit Thread</a></span></li>
+                                        <li>|</li>
                                         <li><span><a href='deletethread.php?thread=$get'>Delete Thread</a></span></li>
-                                        </ul>
                                 </div>
                             </div>
                         </div>";}else{
