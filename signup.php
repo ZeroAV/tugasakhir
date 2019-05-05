@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <?php
 include('connect.php');
-include('signup_process.php');
-
 ?>
 <html lang="en">
 
@@ -31,23 +29,23 @@ include('signup_process.php');
                     <h4 class="card-title mt-2">Sign up</h4>
                 </header>
                 <article class="card-body">
-                    <form>
+                    <form action="signup_process.php" method="post">
                         <div class="form-row">
                             <div class="col form-group">
                                 <label>Name </label>
                                 <input name="nama" type="text" class="form-control" placeholder="" id="nama"
-                                value="<?php echo $nama; ?>" required>
+                                value="" required>
                             </div> <!-- form-group end.// -->
                         </div> <!-- form-row end.// -->
 
                         <div class="form-group">
                             <label class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" value="m"
+                                <input class="form-check-input" type="radio" name="gender" value="m" id="gender"
                                 <?php if (isset($gender)) {if ($gender == 'm') echo 'checked';} ?> required>
                                 <span class="form-check-label"> Male </span>
                             </label>
                             <label class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" value="f"
+                                <input class="form-check-input" type="radio" name="gender" value="f" id="gender"
                                 <?php if (isset($gender)) {if ($gender == 'f') echo 'checked';} ?> required>
                                 <span class="form-check-label">Female</span>
                             </label>
@@ -56,13 +54,13 @@ include('signup_process.php');
                         <div class="form-group">
                             <label>Create username</label>
                             <input class="form-control" type="text" id="username" name="username"
-                            value="<?php echo $username; ?>" required>
+                            value="" required>
                         </div> <!-- form-group end.// -->
 
                         <div class="form-group">
                             <label>Create password</label>
                             <input class="form-control" type="password" id="password" name="password"
-                            value="<?php echo $password; ?>" required>
+                            value="" required>
                         </div> <!-- form-group end.// -->
 
                         <div class="form-group">
