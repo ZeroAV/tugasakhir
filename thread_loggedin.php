@@ -66,7 +66,14 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
     <section id="latest" class="latest">
         <div class="latest-threads">
             <?php echo "<h3 class='forum-title'>$thread[title]</h3
-            <p class='forum-by'>By $thread[username]</p>";?>
+            <p class='forum-by'>By $thread[username]</p>";
+            if($_SESSION['username']=="admin"){
+                echo "<a href='editthread.php?thread=$_GET[thread]'><p class='forum-title'>Edit Thread</p></a>";
+            }else if(isset($_SESSION['username'])){
+                if($_SESSION['username']==$thread['username']){
+                echo "<a href='editthread.php?thread=$_GET[thread]'><p class='forum-title'>Edit Thread</p></a>";
+                }
+            }?>
         </div>
         </div>
         <div class='container'>
