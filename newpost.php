@@ -13,5 +13,5 @@ if($query){
     header("location: thread_loggedin.php?thread=".$tid);
 } else{
     echo "<script>alert('Add post failed!').delay(2000);</script>";
-    //header("location: thread_loggedin.php?thread=".$tid);
+    header("location: thread_loggedin.php?thread=".$tid);
 }
