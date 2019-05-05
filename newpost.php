@@ -9,6 +9,7 @@ $tid=$_GET['thread'];
 $query=mysqli_query($mysqli,"INSERT INTO post (id, username, thread_id, content, date_created, date_edited)
 VALUES ('0', '$username', '$tid', '$content', '$date', '$date')");
 if($query){
+    mysqli_query($mysqli, "UPDATE thread SET date_last_edited='$date' WHERE thread_id='$tid'");
     header("location: thread_loggedin.php?thread=".$tid);
 } else{
     echo "<script>alert('Add post failed!').delay(2000);</script>";
