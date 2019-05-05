@@ -2,7 +2,7 @@
 session_start();
 $q=mysqli_query($mysqli,"SELECT * FROM thread WHERE thread_id=$_GET[thread] LIMIT 1");
 $thread=mysqli_fetch_assoc($q);
-$query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]");?>
+$query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread] AND id=$_GET[post]");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +21,7 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
     <link href="css/global.css" rel="stylesheet">
     <link href="css/thread.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -46,7 +47,7 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
                 <li><a href="index_loggedin.php">Home</a></li>
                     <li><a href="home_loggedin.php">Forums</a></li>
                     <li><a href="about_us_loggedin.php">About Us</a></li>
-                    <li><a href="newthread.php">New Thread</a></li>
+                    <li classs="active"><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
                         <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
@@ -60,70 +61,40 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
         </div>
         <!-- /.container -->
     </nav>
-
-
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <section id="latest" class="latest">
         <div class="latest-threads">
-            <?php echo "<h3 class='forum-title'>$thread[title]</h3
-            <p class='forum-by'>By $thread[username]</p>";?>
+            <h3 class="title">Edit Post</h3>
         </div>
         </div>
         <div class='container'>
         <?php while($hasil=mysqli_fetch_assoc($query)){
-        $get=$hasil['thread_id'];
-        $getpost=$hasil['id'];
         echo "<div class='well'>
                 <div class='media'>
                     <div class='media-body'>
                         <h4 class='media-heading'>$hasil[username]</h4>
                         <p class='text-justify'>$hasil[content]</p>
                         <ul class='list-inline list-unstyled'>
-                                <li><span><i class='glyphicon glyphicon-time'></i> Created $hasil[date_created]</span></li>
-                                <li>|</li>
-                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_edited] </span></li>";
-                                if($_SESSION['username']=="admin"){
-                                echo "<li>|</li>
-                                <li><span><a href='deletepost.php?thread=$get&post=$getpost'>Delete Post</a></span></li>
-                                <li>|</li>
-                                <li><span><a href='editpost.php?thread=$get&post=$getpost'>Edit Post</a></span></li>
-                                </ul>
-                        </div>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Posted $hasil[date_created] </span></li>
+                            <li>|</li>
+                            <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_edited] </span></li>
+                        </ul>
                     </div>
-                </div>";
-                                }else if(isset($_SESSION['username'])){
-                                        if($_SESSION['username']==$hasil['username']){
-                                        echo "<li>|</li>
-                                        <li><span><a href='deletepost.php?thread=$get&post=$getpost'>Delete Post</a></span></li>
-                                        <li>|</li>
-                                <li><span><a href='editpost.php?thread=$get&post=$getpost'>Edit Post</a></span></li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>";}else{
-                            echo "</ul>
-                            </div>
-                        </div>
-                    </div>";
-                        }
-                                } else{
-                                    echo "</ul>
-                                    </div>
-                                </div>
-                            </div>";
-                                }
-                            }?>
-            <?php echo"
+                </div>
+            </div>";}?>
+        </div>
+        <div class="container">
             <div class=new-post>
-                <label class='new-post-title'>New Post</label>
-                <form action='newpost.php?thread=$hasil[thread_id]' method='post'>
-                    <textarea id='content' class='form-control' placeholder='Your post/reply...'></textarea>
+                <form action="<?php echo "editpost.php?thread=$_GET[thread]&post=$_GET[post]";?>" method='post'>
+                    <label class="new-post-title">Edit Post Content</label>
+                    <textarea id="content" name="content" class="form-control" placeholder="Post..." value="content"></textarea>
                     <div class='post-button'>
                         <button type='submit' class='btn btn-primary pull-right' id='submit'>Post</button>
                     </div>
                 </form>
-            </div>";?>
+            </div>
         </div>
+
 
 
         <footer>

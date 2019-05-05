@@ -44,8 +44,8 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                <li><a href="index_loggedin.php">Home</a></li>
-                    <li  class="active"><a href="home_loggedin.php">Forums</a></li>
+                    <li><a href="index_loggedin.php">Home</a></li>
+                    <li class="active"><a href="home_loggedin.php">Forums</a></li>
                     <li><a href="about_us_loggedin.php">About Us</a></li>
                     <li><a href="newthread.php">New Thread</a></li>
                     <li class="dropdown">
@@ -92,11 +92,34 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread");
                             <ul class='list-inline list-unstyled'>
                                 <li><span><i class='glyphicon glyphicon-time'></i> Created $hasil[date_created]</span></li>
                                 <li>|</li>
-                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>
-                            </ul>
+                                <li><span><i class='glyphicon glyphicon-time'></i> Last edited $hasil[date_last_edited] </span></li>";
+                                if($_SESSION['username']=="admin"){
+                                echo "<li>|</li>
+                                <li><span><a href='deletethread.php?thread=$get'>Delete Thread</a></span></li>
+                                </ul>
                         </div>
                     </div>
-                </div>";}?>
+                </div>";
+                                }else if(isset($_SESSION['username'])){
+                                        if($_SESSION['username']==$hasil['username']){
+                                        echo "<li>|</li>
+                                        <li><span><a href='deletethread.php?thread=$get'>Delete Thread</a></span></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>";}else{
+                            echo "</ul>
+                            </div>
+                        </div>
+                    </div>";
+                        }
+                                } else{
+                                    echo "</ul>
+                                    </div>
+                                </div>
+                            </div>";
+                                }
+                            }?>
         </div>
         <footer>
             <div class="container">
