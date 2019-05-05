@@ -16,6 +16,6 @@ if($query){
     VALUES ('0', '$username', '$tid', '$content', '$date', '$date')");
     header("location: thread_loggedin.php?thread=".$tid);
 }else{
-    echo "<script>alert('Thread creation failed');</script>";
-    //header("location: home_loggedin.php");
+    echo "<script> alert('Thread creation failed').delay(2000);</script>";
+    header("location: home_loggedin.php");
 }

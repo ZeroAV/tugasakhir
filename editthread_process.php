@@ -9,6 +9,6 @@ if($query){
     mysqli_query($mysqli, "UPDATE thread SET title=$title, date_last_edited=$date WHERE thread_id=$id");
     header("location: home_loggedin.php");
 }else{
-    echo "<script>alert('Update failed!');</script>";
+    echo "<script>alert('Edit failed!').delay(2000);</script>";
     header("location: home_loggedin.php");
 }

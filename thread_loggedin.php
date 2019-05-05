@@ -117,8 +117,8 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
             <?php echo"
             <div class=new-post>
                 <label class='new-post-title'>New Post</label>
-                <form action='newpost.php?thread=$hasil[thread_id]' method='post'>
-                    <textarea id='content' class='form-control' placeholder='Your post/reply...'></textarea>
+                <form action='newpost.php?thread=$_GET[thread]' method='post'>
+                    <textarea id='content' name='content' class='form-control' placeholder='Your post/reply...'></textarea>
                     <div class='post-button'>
                         <button type='submit' class='btn btn-primary pull-right' id='submit'>Post</button>
                     </div>

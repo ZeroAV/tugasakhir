@@ -85,9 +85,9 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread] 
         </div>
         <div class="container">
             <div class=new-post>
-                <form action="<?php echo "editpost.php?thread=$_GET[thread]&post=$_GET[post]";?>" method='post'>
+                <form action="<?php echo "editpost_process.php?thread=$_GET[thread]&post=$_GET[post]";?>" method='post'>
                     <label class="new-post-title">Edit Post Content</label>
-                    <textarea id="content" name="content" class="form-control" placeholder="Post..." value="content"></textarea>
+                    <textarea id="content" name="content" class="form-control" placeholder="First post..."></textarea>
                     <div class='post-button'>
                         <button type='submit' class='btn btn-primary pull-right' id='submit'>Post</button>
                     </div>

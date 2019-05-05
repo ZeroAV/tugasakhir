@@ -1,26 +1,15 @@
-<?php
-
-include_once('connect.php');
+<?php include "connect.php";
 session_start();
-if (!isset($_SESSION['username'])) {
-    header('Location:login.php');
-    die();
+extract($_POST);
+$username=$_SESSION['username'];
+$content=$_POST['content'];
+$date=date("Y-m-d H:i:s");
+$tid=$_GET['thread'];
+$query=mysqli_query($mysqli,"INSERT INTO post (id, username, thread_id, content, date_created, date_edited)
+VALUES ('0', '$username', '$tid', '$content', '$date', '$date')");
+if($query){
+    header("location: thread_loggedin.php?thread=".$tid);
+} else{
+    echo "<script>alert('Add post failed!').delay(2000);</script>";
+    //header("location: thread_loggedin.php?thread=".$tid);
 }
-if (isset($_POST['post'])) {
-    $username = $_SESSION['username'];
-
-    $content = $_POST['content'];
-
-    $thread = $_POST['thread'];
-
-    $sql = "INSERT INTO post (content,date_created) VALUES('$content',NOW())";
-
-    $sql = "INSERT INTO thread (title,date_created) VALUES('$thread',NOW())";
-
-    $result = $mysqli->query($sql);
-        
-    }
-
-    header('Location:home.php');
-
-?>
