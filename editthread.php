@@ -91,7 +91,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread WHERE thread_id=$_GET[thread]");
             <div class=new-post>
                 <form action="<?php echo "editthread_process.php?thread=$_GET[thread]";?>" method='post'>
                     <label class="new-post-title">Thread Title</label>
-                    <textarea id="title" name="title" class="form-control" placeholder="Thread title..."></textarea>
+                    <textarea id="title" name="title" class="form-control" placeholder="Thread title..." autofocus></textarea>
                     <label class="new-post-title">First Post</label>
                     <textarea id="content" name="content" class="form-control" placeholder="First post..."></textarea>
                     <div class='post-button'>
