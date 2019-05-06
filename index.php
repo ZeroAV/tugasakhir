@@ -1,5 +1,5 @@
 <?php include "connect.php";
-$q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_created DESC LIMIT 2");
+$q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_last_edited DESC LIMIT 2");
 
 ?>
 <!DOCTYPE html>
