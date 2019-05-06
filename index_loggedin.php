@@ -103,7 +103,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_last_edited DESC LIM
                 </div>";}?>
                 <form action="home_loggedin.php">
                     <div class='post-button'>
-                        <button type='submit' class='btn btn-primary pull-right' id='submit'>More Threads</button>
+                        <button type='submit' class='btn btn-primary btn-block' id='submit'>More Threads</button>
                     </div>
                 </form>
         </div>
