@@ -6,6 +6,7 @@ $nama= $_POST['nama'];
 $gender=$_POST['gender'];
 $username =$_POST['username'];
 $password =$_POST['password'];
+$passhash = password_hash($password, PASSWORD_BCRYPT);
 $errors = array();
 
 if (isset($_POST['username'])) {
@@ -21,7 +22,7 @@ if (isset($_POST['username'])) {
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
   	$query = "INSERT INTO user (username, nama, password, gender) 
-  			  VALUES('$username', '$nama','$password' ,'$gender')";
+  			  VALUES('$username', '$nama','$passhash' ,'$gender')";
   	mysqli_query($mysqli, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";

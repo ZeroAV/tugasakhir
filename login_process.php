@@ -11,7 +11,8 @@ $sql="SELECT * FROM user WHERE username='$username'";
 $result=$mysqli->query($sql);
 if($result->num_rows>0){
     $row=$result->fetch_assoc();
-    if($row['password']==$password){
+    $password=$_POST['password'];
+    if(password_verify($password ,$row['password'])){
     
     foreach($row as $key=>$value){
         $_SESSION["$key"]=$value;
