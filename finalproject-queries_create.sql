@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.5-10.1.37-MariaDB)
 # Database: finalproject
-# Generation Time: 2019-04-30 1:01:47 AM +0000
+# Generation Time: 2019-05-06 12:51:36 PM +0000
 # ************************************************************
 
 
@@ -18,21 +18,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-
-# Dump of table admin
-# ------------------------------------------------------------
-
-CREATE TABLE `admin` (
-  `username` varchar(20) NOT NULL DEFAULT '',
-  `nama` varchar(50) NOT NULL DEFAULT '',
-  `password` varchar(20) NOT NULL DEFAULT '',
-  `gender` char(1) NOT NULL DEFAULT '',
-  `bio` longtext,
-  PRIMARY KEY (`username`),
-  CONSTRAINT `fk_admin-uname` FOREIGN KEY (`username`) REFERENCES `user` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 
 
 # Dump of table post
@@ -76,7 +61,7 @@ CREATE TABLE `thread` (
 CREATE TABLE `user` (
   `username` varchar(20) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `password` varchar(60) NOT NULL DEFAULT '',
   `gender` char(1) NOT NULL DEFAULT '',
   `bio` longtext,
   PRIMARY KEY (`username`)

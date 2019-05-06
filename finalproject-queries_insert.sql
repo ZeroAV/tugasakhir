@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.5-10.1.37-MariaDB)
 # Database: finalproject
-# Generation Time: 2019-04-30 1:45:09 AM +0000
+# Generation Time: 2019-05-06 12:51:53 PM +0000
 # ************************************************************
 
 
@@ -20,20 +20,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table admin
-# ------------------------------------------------------------
-
-LOCK TABLES `admin` WRITE;
-/*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-
-INSERT INTO `admin` (`username`, `nama`, `password`, `gender`, `bio`)
-VALUES
-	('admin','admin','123','L','ini punya admin');
-
-/*!40000 ALTER TABLE `admin` ENABLE KEYS */;
-UNLOCK TABLES;
-
-
 # Dump of table post
 # ------------------------------------------------------------
 
@@ -42,15 +28,13 @@ LOCK TABLES `post` WRITE;
 
 INSERT INTO `post` (`id`, `username`, `thread_id`, `content`, `date_created`, `date_edited`)
 VALUES
-	(1,'adit',1,'PHP itu apa?','2019-04-22 18:00:00','2019-04-22 18:00:00'),
-	(2,'aldy',1,'PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.','2019-04-22 18:21:00','2019-04-22 18:21:00'),
-	(3,'dika',1,'PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft\'s ASP.\n','2019-04-22 18:32:00','2019-04-22 18:32:00'),
-	(4,'aldy',2,'Java itu apa sih?','2019-04-23 20:11:00','2019-04-23 20:11:00'),
-	(5,'dika',2,'Java is a general-purpose programming language that is class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible','2019-04-23 20:13:00','2019-04-23 20:13:00'),
-	(6,'dika',3,'HTML itu apa sih?','2019-04-24 19:20:00','2019-04-24 19:20:00'),
-	(7,'adit',3,'HTML atau HyperText Markup Language digunakan untuk membuat website','2019-04-24 19:25:00','2019-04-24 19:25:00'),
-	(8,'dika',4,'Scala itu apa sih?','2019-04-25 16:20:00','2019-04-25 16:20:00'),
-	(9,'aldy',4,'Scala adalah bahasa pemrograman berbasis JVM','2019-04-25 16:23:00','2019-04-25 16:23:00');
+	(44,'dika',5,'PHP itu apa sih','2019-05-06 12:10:11','2019-05-06 12:10:11'),
+	(45,'aldy',5,'PHP: Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.','2019-05-06 12:11:05','2019-05-06 12:11:05'),
+	(46,'aldy',6,'HTML itu apa sih?','2019-05-06 12:11:22','2019-05-06 12:11:22'),
+	(47,'adit',6,'Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.','2019-05-06 12:11:45','2019-05-06 12:11:45'),
+	(48,'adit',7,'Java itu apa sih?','2019-05-06 12:12:00','2019-05-06 12:12:00'),
+	(50,'adit',5,'PHP is a server side scripting language','2019-05-06 12:22:54','2019-05-06 12:22:54'),
+	(51,'aldy',7,'Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems, which was later acquired by the Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment.','2019-05-06 12:25:05','2019-05-06 12:25:05');
 
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -64,10 +48,9 @@ LOCK TABLES `thread` WRITE;
 
 INSERT INTO `thread` (`thread_id`, `username`, `title`, `date_created`, `date_last_edited`)
 VALUES
-	(1,'adit','PHP','2019-04-22 18:00:00','2019-04-22 18:32:00'),
-	(2,'aldy','Java','2019-04-23 20:11:00','2019-04-23 20:13:00'),
-	(3,'dika','HTML','2019-04-24 19:20:00','2019-04-24 19:25:00'),
-	(4,'dika','Scala','2019-04-25 16:20:00','2019-04-25 16:23:00');
+	(5,'dika','PHP','2019-05-06 12:10:11','2019-05-06 12:22:54'),
+	(6,'aldy','HTML','2019-05-06 12:11:22','2019-05-06 12:11:45'),
+	(7,'adit','Java','2019-05-06 12:12:00','2019-05-06 12:25:05');
 
 /*!40000 ALTER TABLE `thread` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -81,10 +64,10 @@ LOCK TABLES `user` WRITE;
 
 INSERT INTO `user` (`username`, `nama`, `password`, `gender`, `bio`)
 VALUES
-	('adit','Adit','123','m','Ini profile adit'),
-	('admin','admin','123','m','Ini punya admin'),
-	('aldy','Aldy','123','m','Ini profile aldy'),
-	('dika','Dika','123','m','Ini profile dika');
+	('adit','adit','$2y$10$9dHmhCV7PCzxUPo/cK0bxersM8bxO5jJ0lVSmZ4.yQlMgSYTrqVkW','m',NULL),
+	('admin','admin','$2y$10$gV1H3Rf/HKhgU97fuXBSKeHHULYvuBqAv/JpapBJYd9pi9lHbOnBq','m',NULL),
+	('aldy','aldy','$2y$10$24DgjG9ga5k0WjgF8AGjwe6Fq2IFEUVCXsQ.ZIEDaESC7d0EN9oQO','m',NULL),
+	('dika','dika','$2y$10$.qxUoaaWGLFHwECkFb2lK.jWwvJyY/ZsNtM6wrIhv5BaRmKIr488u','m',NULL);
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -97,4 +80,3 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-thread
