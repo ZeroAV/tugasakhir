@@ -1,5 +1,7 @@
 # tugasakhir
 ## Project Akhir Pemweb
+!!Sebelum menjalankan, pastikan database queries terlampir telah dieksekusi!!
+
 Dibuat oleh:
 * Aditya Luthfi Alvari Ramadhan – 175150200111007
 * Rahadian Fernandika – 175150200111014
