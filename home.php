@@ -43,7 +43,7 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_last_edited DESC");
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="Index_loggedin.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li class="active"><a href="home.php">Forums</a></li>
                     <li><a href="about_us.php">About Us</a></li>
                     <li><a href="login.php">New Thread</a></li>
