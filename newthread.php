@@ -10,7 +10,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>kuliahGan</title>
+    <title>New Thread - kuliahGan</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet">

@@ -12,7 +12,7 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>kuliahGan</title>
+    <title><?php echo $thread['title'];?> - Thread @ kuliahGan</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet">
