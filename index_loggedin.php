@@ -67,14 +67,6 @@ $q=mysqli_query($mysqli,"SELECT * FROM thread ORDER BY date_last_edited DESC LIM
             <h2>Hai Gan! <span class="text_color"></span> </h2>
             <h4>Mau nanya apa hari ini?</h4>
         </div>
-        <div class="container">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search topics or keyword...">
-                <span class="input-group-btn">
-                    <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
-                </span>
-            </div>
-        </div>
         <div class="page-scroll">
             <h1></h1>
             <h2></h2>
