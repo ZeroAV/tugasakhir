@@ -50,7 +50,6 @@ $query = mysqli_query($mysqli,"SELECT * FROM post WHERE thread_id=$_GET[thread]"
                     <li class="dropdown">
                         <?php echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>Hi, $_SESSION[username]!<b class='caret'></b></a>";?>
                         <ul class="dropdown-menu">
-                            <li><a href="profile_page.php">Profile</a></li>
                             <li><a href="logout_process.php">Logout</a></li>
                         </ul>
                     </li>
