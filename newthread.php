@@ -33,7 +33,7 @@ session_start();
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="index_loggedin.php">
                     <h1>kuliahGan</h1>
                 </a>
             </div>
