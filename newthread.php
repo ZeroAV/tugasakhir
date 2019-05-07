@@ -67,9 +67,9 @@ session_start();
             <div class=new-post>
                 <form action="newthread_process.php" method='post'>
                     <label class="new-post-title">Thread Title</label>
-                    <textarea id="title" name="title" class="form-control" placeholder="Thread title..." autofocus></textarea>
+                    <textarea id="title" name="title" class="form-control" placeholder="Thread title..." autofocus required></textarea>
                     <label class="new-post-title">First Post</label>
-                    <textarea id="content" name="content" class="form-control" placeholder="First post..."></textarea>
+                    <textarea id="content" name="content" class="form-control" placeholder="First post..." required></textarea>
                     <div class='post-button'>
                         <button type='submit' class='btn btn-primary pull-right' id='submit'>Post</button>
                     </div>
